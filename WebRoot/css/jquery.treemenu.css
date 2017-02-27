@@ -1,0 +1,22 @@
+/* For treemenu.js */
+.treemenu ul{padding-left: 10px;}
+.treemenu li { list-style: none; }
+
+.treemenu .toggler {    cursor: pointer;}
+
+.treemenu .toggler:before {
+    display: inline-block;
+}
+.toggler{vertical-align: bottom}/*
+li.tree-empty > .toggler { color: #aaa;}
+li.tree-empty > .toggler:before { content: "\2212"; }*/
+.treemenu li .toggler:before ,.treemenu li .toggler:after{content:"";width:20px;height:22px;line-height:22px;display:inline-block; }
+li.tree-closed > .toggler:before { background:url("images/arrow1.png") 5px 6px no-repeat;}
+li.tree-opened > .toggler:before { background:url("images/arrow2.png") 5px 6px no-repeat; }
+.tree-empty> .toggler::after{ background:url("images/icons/document.png") 0 5px no-repeat;}
+.filedoc> .toggler::after{ background:url("images/icons/file_extension/file_doc.png") 0 6px no-repeat;}
+.filepdf> .toggler::after{ background:url("images/icons/file_extension/file_pdf.png") 0 6px no-repeat;}
+.filepng> .toggler::after{ background:url("images/icons/file_extension/file_png.png") 0 6px no-repeat;}
+.filejpg> .toggler::after{ background:url("images/icons/file_extension/file_jpg.png") 0 6px no-repeat;}
+.tree-closed> .toggler::after{ background:url("images/icons/folder.png") 0 6px no-repeat;}
+.tree-opened> .toggler::after{ background:url("images/icons/folder-open.png")  0 5px no-repeat;}

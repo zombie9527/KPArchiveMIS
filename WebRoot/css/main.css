@@ -1,0 +1,350 @@
+@charset "utf-8";
+
+html,body {
+	overflow: hidden;
+	height:100%;
+}
+/*--------------------------------header--------------------------------*/
+#hd {
+	position: absolute;
+	/*z-index: 3;*/
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 66px;
+	min-width:700px;
+	background: #72ACDA url(images/hd_bg.png) repeat-x top;
+	background: -moz-linear-gradient(center top,#C1EBEF,#72ACDA);
+	background: -webkit-gradient(linear,center top,center bottom,from(#C1EBEF),to(#72ACDA));
+	border-bottom: 4px solid #069;
+	border-top: 1px solid #FFF;
+	color:#000;
+	line-height:66px;
+	font-size:14px;
+}
+/*---------------------------body----------------------------------*/
+#bd {
+	position:absolute;
+	z-index: 1;
+	top: 70px;
+	left: 0;
+	right:0;
+	bottom: 34px;
+	min-width:700px;
+	min-height:100px;
+}
+
+#bd #main{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 214px;
+	overflow: auto;
+}
+#bd #main #tabs{
+	height: 100%;
+	width: 100%;
+}
+
+#bd #main #tabs #tabsList{
+	position: absolute;
+	height:30px;
+	top: 0;
+	left: 0;
+	right: 0;
+	border:none;
+}
+/* 这两个是为了自适应标签页做的，可以添加很多标签页自动调整大小 */
+#bd #main #tabs #tabsList li{
+	max-width:180px;
+	min-width:30px;
+	height:26px;
+}
+#bd #main #tabs #tabsList li a{
+	max-width:120px;
+	overflow: hidden;
+	text-overflow:ellipsis;
+}
+#bd #main #tabs #tabsList li span{
+	display:inline-block;
+	text-align:center;
+	line-height:27px;
+	width:27px;
+	cursor:pointer;
+}
+#bd #main #tabs #tabsList li span:hover{
+	font-weight: bold;
+}
+#bd #main #tabs #contentList{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background:url(images/body-bg.png) repeat-x top #EFEFFF;
+}
+#bd #main #tabs #contentList>div{
+	position: absolute;
+	padding: 0 1px;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.preview {
+	background:#FFF url(images/bd-bg.png) repeat-x top;
+}
+
+#side {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	overflow:auto;
+	overflow-x:hidden;
+	float:left;
+	width:200px;
+}
+#side #fileList li{
+	font-size:14px;
+	height:29px;
+	text-align:center;
+	list-style:none;
+	cursor:pointer;
+	position:relative;
+}
+#side #fileList li:hover{
+	background-color:#39f;
+}
+#side .download{
+	position:absolute;
+	font-size:12px;
+	float:right;
+}
+#side .download:hover{
+	font-size:15px;
+}
+
+#side {
+	background: url(images/side-bg.png) repeat-x top #E4ECF5;
+	border-top: #FFF;
+	border-right: 1px solid #069;
+}
+
+#navHd {
+	border-bottom: 1px solid #FFF;
+	margin: 5px 10px;
+}
+
+#navHd h2 {
+	padding-top: 15px; padding-bottom: 10px;
+	border-bottom: 1px solid #09F;
+}
+
+#navHd h2 a { font-weight:normal; font-size:12px}
+
+#navigation {
+	margin:5px 0;
+}
+
+/*----------------------------------footer--------------------------------------------*/
+#ft {
+	position: absolute;
+	z-index: 3;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 33px;
+	min-width:700px;
+	background:#B9E0ED url(images/ft_bg.png) repeat-x top;
+	background: -moz-linear-gradient(center top,#F4F4F4,#B9E0ED);
+	background: -webkit-gradient(linear,center top,center bottom,from(#F4F4F4),to(#B9E0ED));
+	border-top: 1px solid #999;
+}
+#ft p {
+	line-height:30px;
+	padding:2px 15px;
+}
+
+/*------------------------------用户管理-------------------------*/
+#hdRight {
+	float:right;
+	font-size: 14px;
+}
+#hdRight a{
+	margin-left:3px;
+	color:#000;
+}
+#hdRight a:hover{
+	color:#666;
+}
+#btnFilePanel{
+	display: inline;
+}
+#btnFilePanel div{
+	display: inline;
+	cursor:pointer;
+}
+#btnFilePanel div:hover{
+	color: #666;
+}
+.user_icon{
+	padding:20px;
+	background:url("images/icons/user-color.png") no-repeat left center;
+}
+.logOff_icon {
+	padding:20px;
+	background:url("images/icons/logout-color.png") no-repeat left center;
+}
+.edit_icon{
+	padding:20px;
+	background:url(images/icons/edit.png) no-repeat left center;
+}
+.user_config_icon{
+	padding:20px;
+	background:url(images/icons/user-config-color.png) no-repeat left center;
+}
+.export_icon{
+	padding:20px;
+	background:url(images/icons/export.png) no-repeat left center;
+}
+.importDocument_icon{
+	padding:20px;
+	background:url(images/icons/document.png) no-repeat left center;
+}
+.savelist_icon{
+	padding:20px;
+	background:url(images/icons/copy.png) no-repeat left center;
+}
+.import_icon{
+	padding:20px;
+	background:url(images/icons/import.png) no-repeat left center;
+}
+.muti_upload_icon{
+	padding:20px;
+	background:url(images/icons/muti-upload.png) no-repeat left center;
+}
+
+#hdLeft{
+	float: left;
+	height: 100%;
+	width: 318px;
+	background: url(images/logo.png) no-repeat left center;
+}
+
+#homeLink{
+	font-size: 14px;
+	color: #000;
+}
+#homeLink:hover{
+	color: #666;
+}
+
+#upData .upPage{
+	position:absolute;
+	left:50%;
+	top:40%;
+	width:530px;
+	height:292px;
+	margin-left:-274px;
+	margin-top:-146px;
+	padding:10px;
+	background-color:#fff;/*--#8BE;---*/
+	behavior: url(styles/PIE.htc); /* for IEs that don't support border-radious*/
+}
+
+#authorPage{
+	margin-top: -33px;
+    padding-top: 33px;
+    background: url(images/side-bg.png) repeat-x top #E4ECF5;
+}
+
+
+/* 首页的文件列表样式 */
+.default_li{
+	float:left;
+	display:inline-block;
+	width:130px;
+	height:100px;
+	margin:10px;
+	cursor:pointer;
+	position:relative;
+}
+
+.default_li .default_df{
+	padding:10px;
+	position:absolute;
+	right:5px;
+	bottom:0px;
+	background: url(images/icons/move-down.png) no-repeat top center;
+}
+
+.default_file{
+	width:130px;
+	height:100px;
+	position:absolute;
+	left:0;
+	top:0;
+}
+
+.default_file span{
+	position:absolute;
+	left:5px;
+	bottom:0px;
+	font-size:14px;
+	color:#000;
+	width:100px;
+	height:16px;
+	overflow:hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.default_doc{
+	background: url(images/file/doc.png) no-repeat top center;
+}
+
+.default_pdf{
+	background: url(images/file/pdf.png) no-repeat top center;
+}
+
+.default_png{
+	background: url(images/file/png.png) no-repeat top center;
+}
+
+.default_jpg{
+	background: url(images/file/jpg.png) no-repeat top center;
+}
+
+.btn-box{
+	position:absolute;
+	right:6px;
+	top:0;
+}
+.fileli{
+	padding:10px;
+	cursor:pointer;
+}
+.fileli:hover{
+	background-color:rgba(100,100,100,0.7);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

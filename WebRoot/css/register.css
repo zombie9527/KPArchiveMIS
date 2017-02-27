@@ -1,0 +1,86 @@
+@charset "utf-8";
+/* CSS Document */
+
+form{
+	margin-top:20px;
+	position:absolute;
+	left:50px;
+	top:32px;
+	z-index: 3;
+}
+
+#registerForm td,.upForm td {
+	height:49px;
+	font-size:14px;
+	font-weight:bold;
+}
+
+#registerForm input,.upForm input{
+	height:23px;
+	line-height:28px;
+	width:200px;
+	background-color:#fff;
+	color:#000;
+	padding:2px 5px;
+	border:1px solid #444;
+	border-radius:3px;
+	font-size:1.5em;
+	outline:none;
+}
+
+#registerForm input:focus,.upForm input:focus {
+    background:#fea;
+}
+
+#registerForm input.button,.upForm input.button {
+	background:#CCC url(images/button-bg.png) repeat-x top;
+	height:36px;
+	width:95px;
+	border:1px solid #555;
+	color:#444;
+	font-size:14px;
+	cursor:pointer;
+}
+
+#registerForm input.button:hover,#upForm input.button:hover {
+	background:url(images/button-bg-hover.png) repeat-x top;
+    color:#444;
+}
+/*------------------------------------------*/
+
+#formHead{
+	display:block;
+	margin-left:50px;
+	margin-top:10px;
+	width:60%;
+}
+
+hr{
+	width:80%;
+}
+
+#login{
+	position:absolute;
+	top:20px;
+	right:50px;
+	color:#636363;
+}
+
+#login:hover {
+	color:#444;
+}
+#registerForm span,#upPasswdForm span {
+	display:block;
+	color:#F00;
+	font-size:14px;
+	font-family:微软雅黑;
+}
+#hint span{
+	font-size:12px;
+	padding-left:20px;
+	background:#fff url("images/icons/info-black.png") no-repeat left center;
+}
+
+#heightTr td{
+	height:10px;
+}
